@@ -11,7 +11,7 @@ pipeline {
         stage('Build Artifact') {
             steps {
                 echo 'Building artifact...'
-                sh 'mvn install'
+                sh 'mvn clean install'
                 echo 'Success'
             }
         }
@@ -23,12 +23,12 @@ pipeline {
         
         stage('Create Docker Image') {
             steps {
-                sh 'docker build -t demo_image .'
+                sh 'docker build -t apigateway_image .'
             }
         }
         stage('Run Container') {
             steps {              
-                sh 'docker run -d -p 8084:8080 --name demoServer demo_image'           
+                sh 'docker run -d -p 8084:8080 --name demoServer apigateway_image'           
             }
         }
     }
