@@ -23,7 +23,7 @@ pipeline {
         
         stage('Create Docker Image') {
             steps {
-                sh 'docker build -t api_gateway_image .'
+                sh 'docker build -t demo_image .'
             }
         }
         stage('Run Container') {
