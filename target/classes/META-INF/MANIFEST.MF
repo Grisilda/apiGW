@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Implementation-Title: apigateway
+Implementation-Version: 1.0.0
+Built-By: evald
+Implementation-Vendor-Id: com.xole
+Build-Jdk: 1.8.0_222
+Implementation-URL: http://projects.spring.io/spring-boot/apigateway/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
